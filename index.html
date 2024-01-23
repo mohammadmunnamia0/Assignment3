@@ -9,9 +9,38 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tallwind color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#f9beb4'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- googlefont -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-popins {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+
+
 </head>
 
-<body>
+<body class="container md:mx-auto">
     <!-- nav section -->
     <nav>
         <!-- first -->
@@ -60,7 +89,7 @@
                         </svg>
                     </button>
                 </div>
-               
+
 
 
                 <button class="btn bg-red-400">Get Ticket</button>
@@ -68,8 +97,183 @@
         </div>
     </nav>
 
+    <!-- main section -->
+
     <main>
 
+        <!-- section 1 -->
+        <div>
+            <!-- carousel -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <img src="./Images/1.png" class="w-full lg:h-[70%] bg-cover" />
+                    <div class="absolute flex gap-10 transform translate-y-1/2 left-5 right-5 top-[60%]">
+                        <div class="">
+                            <a href="#slide2" class="btn bg-slate-500 btn-circle">❮</a>
+                            <a href="#slide2" class="btn  bg-slate-500 btn-circle">❯</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full lg:h-[70%] bg-cover" />
+                    <div class="absolute flex gap-10 transform translate-y-1/2 left-5 right-5 top-[60%]">
+                        <div class="">
+                            <a href="#slide1" class="btn  bg-slate-500 btn-circle">❮</a>
+                            <a href="#slide1" class="btn  bg-slate-500 btn-circle">❯</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div
+                class=" lg:w-[40%] m-5 p-2 lg:mt-0 h-[190px] lg:h-[200px] lg:-translate-y-[550px] text-cyan-50  absolute lg:right-5 rounded-lg text-left bg-slate-800">
+
+                <h2 class=" lg:text-2xl p-2 lg:pt-10 text-cyan-50">Meet all the heroes from the field</h2>
+                <p class="font-Manrope p-2 sm:text-xl lg:text-xl text-cyan-50">Marie Curie, a trailblazing figure in the
+                    realm of science, made indelible contributions to the understanding of radioactivity. </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- section 2 -->
+
+
+
+        <section class="mt-[250px] lg:mt-0">
+            <div>
+                <hr class="mx-auto border-t-4 border-dotted border-red-500 text-white bg-white h-1 w-1/2">
+                <div class="m-5 text-center">
+                    <h1 class="items-center text-center text-6xl font-bold mt-[20px]">Professional <span
+                            class="text-orange-400">Hockeys Club</span></h1>
+                    <br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laudantium animi
+                        incidunt
+                        recusandae facilis sunt explicabo ratione possimus esse laboriosam!</p>
+                </div>
+                <hr class="mx-auto size-9 border-t-4 border-dotted border-red-500 text-white bg-white h-1 w-1/2">
+
+            </div>
+
+            <!-- progressbar -->
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 items-center text-center mt-12 gap-1 ">
+
+                <div>
+
+                    <div class="radial-progress items-center"
+                        style="--value:87;--size:10rem; --thickness: 1rem; color: red;" role="progressbar">87%</div>
+                    <div class="pt-5">
+                        <h1>Player Facility</h1>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+
+                </div>
+                <div class="mt-5">
+
+                    <div class="radial-progress items-center"
+                        style="--value:95; --size:10rem; --thickness: 1rem; color: green;" role="progressbar">95%</div>
+                    <div class="pt-5">
+                        <h1>Player Facility</h1>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+
+                </div>
+                <div class="mt-5">
+
+                    <div class="radial-progress items-center"
+                        style="--value:90; --size:10rem; --thickness: 1rem; color: orange;" role="progressbar">90%</div>
+                    <div class="pt-5">
+                        <h1>Player Facility</h1>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+
+                </div>
+                <div class="mt-5">
+
+                    <div class="radial-progress items-center"
+                        style="--value:80; --size:10rem; --thickness: 1rem; color: skyblue;" role="progressbar">80%
+                    </div>
+                    <div class="pt-5">
+                        <h1>Player Facility</h1>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- section 3 -->
+        <section class="p-4 lg:mt-18">
+            <div class="text-center">
+                <h1 class="items-center text-center text-6xl font-bold mt-[120px]">Program <span
+                        class="text-orange-400">Sections</span></h1>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex incidunt tempore? Quibusdam, vero.
+                    Similique, cupiditate? Molestiae officia illum itaque?</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-24">
+
+
+                <div class="card  bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full h-full" src="/Images/2.png"></figure>
+                    <div class="card-body mt-[200px]">
+                        <div>
+                            <h2 class="card-title">Junior Program!</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, atque.</p>
+                        </div>
+                       
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card image-full">
+                    <figure><img class="w-full h-full" src="/Images/3.png" /></figure>
+                    <div class="card-body mt-[200px]">
+                        <div>
+                            <h2 class="card-title">Teenager program!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                        </div>
+                        
+                        <div class="card-actions ">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 lg:col-span-2 shadow-xl image-full">
+                    <figure><img class="w-full h-full" src="/Images/4.png"></figure>
+                    <div class="card-body mt-[200px]">
+                        <div>
+                            <h2 class="card-title">Professional Program!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
 
@@ -85,7 +289,8 @@
 
 
 
-        
+
+
     </main>
 
 
